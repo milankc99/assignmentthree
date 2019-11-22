@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#76D7C4"
+    >
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/logo"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:hint="Name of Student"
+        android:layout_toRightOf="@+id/imgProfile" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/delete"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/ic_delete_black_24dp"
+        android:layout_toRightOf="@+id/name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/name"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Age of Student"
+        android:layout_toRightOf="@+id/imgProfile" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Address of Student"
+        android:layout_toRightOf="@+id/imgProfile" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/address"
+        android:layout_below="@+id/age"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Gender"
+        android:layout_toRightOf="@+id/address" />
+
+
+</RelativeLayout>
